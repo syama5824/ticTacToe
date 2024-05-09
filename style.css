@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #8ecae6;
+    text-align: center;
+    display: flex; /* Center horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure full viewport height */
+}
+.container{
+    height: 70vh;
+}
+.game{
+    height: 60vmin;/*max limit to avoid overflow*/
+    width: 60vmin;/*this to be written acc to height and width of the box*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*gap: 6vmin;*/
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    vertical-align: top;/*to align the buttons that are written to stay in place.
+    Generally, buttons float, when something is wriiten it goes down*/
+    font-size: 8vmin;
+    color: #ffb703;
+}
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #023047;
+    color: #fb8500;
+    border-radius: 1rem;
+}
+
+#newGame-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #023047;
+    color: #fb8500;
+    border-radius: 1rem;
+    display:block;
+    margin:0 auto;
+    margin-top: 10px;
+}
+
+#msg{
+    color: #023047;
+    font-family: 'Papyrus',sans-serif;
+    background-color: #ffb703;
+    border-radius: 0.5rem;
+    font-size: 5vmin;
+}
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vmin;
+}
+
+.hide{
+ display: none;   
+}
